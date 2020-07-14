@@ -46,16 +46,17 @@
 [property]
 gpu-id=0
 net-scale-factor=0.0039215697906911373
-#model-file=resnet10.caffemodel
-#proto-file=resnet10.prototxt
-#model-engine-file=resnet10.caffemodel_b8_fp16.engine
-labelfile-path=labels.txt
+#model-file=../resnet10.caffemodel
+#proto-file=../resnet10.prototxt
+#model-engine-file=../resnet10.caffemodel_b8_fp16.engine
+tlt-encoded-model=../resnet10_detector.etlt
+labelfile-path=../labels.txt
 #batch-size=8
 process-mode=1
 model-color-format=0
 ## 0=FP32, 1=INT8, 2=FP16 mode
-network-mode=2
-num-detected-classes=4
+network-mode=0
+num-detected-classes=3
 interval=0
 gie-unique-id=1
 output-blob-names=conv2d_bbox;conv2d_cov/Sigmoid
